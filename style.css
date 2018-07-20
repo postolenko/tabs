@@ -385,6 +385,13 @@ textarea:focus {
     background: #484285;
 }
 
+.dropdown-toggle i {
+    margin: 0 0 0 10px;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+}
+
 .dropdown-toggle:hover + .dropdown-menu {
     display: block !important;
 }
@@ -399,6 +406,7 @@ textarea:focus {
 }
 
 .tabs .tab {
+    padding: 20px;
     width: 100%;
     position: absolute;
     top: 0;

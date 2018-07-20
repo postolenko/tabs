@@ -31,7 +31,18 @@ $(document).ready(function() {
         activeTab.addClass("active");
     });
 
-    $(".dropdown-menu").addClass("slidemenu");
+    // $(".dropdown-menu").addClass("slidemenu");
+
+    $(".dropdown_wrapp").each(function() {
+
+        if( $(this).find(".dropdown-menu").length > 0 ) {
+
+            $(this).find(".dropdown-toggle").append('<i class="fas fa-chevron-down"></i>');
+
+        }
+
+    });
+   
 
     $(".dropdown-menu a").click( function(e) {
 
