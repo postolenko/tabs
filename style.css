@@ -400,12 +400,12 @@ textarea:focus {
     display: block !important;
 }
 
-.tabs {
-    border: 2px solid #484285;
+.tabs {    
     position: relative;
 }
 
 .tabs .tab {
+    border: 2px solid #484285;
     padding: 20px;
     width: 100%;
     position: absolute;
