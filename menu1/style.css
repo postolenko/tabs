@@ -35,7 +35,6 @@ html {
     line-height: 14px;
 }
 
-
 html,
 body {
     min-height: 100%;
@@ -49,37 +48,6 @@ body {
 .wrapper {
     width: 100%;
     position: relative;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-}
-
-header {
-    order: 1;
-    -webkit-order: 1;
-}
-
-.content {
-    order: 2;
-    -webkit-order: 2;
-    flex-grow: 1;
-    -webkit-flex-grow: 1;
-}
-
-footer {
-    order: 3;
-    -webkit-order: 3;
-    position: relative;
-    z-index: 5;
 }
 
 .clearfix:after {
@@ -98,13 +66,6 @@ footer {
 * html .clearfix             { zoom: 1; }
 *:first-child+html .clearfix { zoom: 1; }
 
-
-
-::-webkit-input-placeholder {color:#555555;}
-::-moz-placeholder          {color:#555555;}
-:-moz-placeholder           {color:#555555;}
-:-ms-input-placeholder      {color:#555555;}
-
 input,
 textarea,
 button,
@@ -114,102 +75,14 @@ img {
     outline: none;
 }
 
-select {
-    -webkit-appearance: none;
-    appearance: none;
-    -moz-appearance;
-    text-indent: 0.01px;
-    text-overflow: "";
-}
-
-*::-ms-expand { display: none; }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-input {
-    -webkit-appearance: none;
-    -moz-appearance
-}
-
 button {
     -webkit-appearance: none;
     -moz-appearance
 }
 
-textarea {
-    resize: none;
-    overflow: auto;
-    -webkit-appearance: none;
-    -moz-appearance;
-}
-
-input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
-input::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
-input:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
-input:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
-input:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
-input:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
-
-textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
-textarea::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
-textarea:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
-textarea:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
-textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity .3s ease;}
-textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity .3s ease;}
-textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity .3s ease;}
-textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity .3s ease;}
-
-.animation-delay-onload {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.animation-delay {
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
-    animation-delay: .3s;
-}
-
 /*-------------------------------------------*/
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
-
-section {
-    position: relative;
-    padding: 10px 0;
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-p {
-
-}
 
 li {
     list-style: none;
@@ -233,22 +106,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -259,37 +116,9 @@ textarea:focus {
     margin: 0 auto;
 }
 
-.offset-ziro {
-    font-size: 0;
-    line-height: 0;
-}
-
 .left {
     float: left;
 }
-
-.right {
-    float: right;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.align-left {
-    text-align: left;
-}
-
-
-/*-------------------------------------------*/
-/* ----- HEADER ------ */
-/*-------------------------------------------*/
-
-
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -496,12 +325,4 @@ textarea:focus {
 
 .seo-text li a:hover {
     border-bottom: 1px solid #484285;
-}
-
-/*-------------------------------------------*/
-/* ----- FOOTER ------ */
-/*-------------------------------------------*/
-
-.footer {
-
 }
