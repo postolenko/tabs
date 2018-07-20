@@ -1,1 +1,1 @@
-# http://postolenko.github.io/tabs/index.html
+# http://postolenko.github.io/tabs/menu1/index.html
