@@ -296,7 +296,7 @@ textarea:focus {
 /*-------------------------------------------*/
 
 .tabs_wrapp {
-    margin: 100px 0;
+    margin: 20px 0;
 }
 
 .tabs-menu_wrapp {
@@ -444,6 +444,59 @@ textarea:focus {
     z-index: 1;
 }
 
+.links_wrapp .left {
+    width: 33.33%;
+}
+
+.seo-text {
+    margin: 10px 0;
+}
+
+.seo-text li {
+    padding: 7px 5px;
+}
+
+.seo-text li a {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    font-family: "OpenSans", "Arial", "Verdana", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #484285;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.seo-text li a:link,
+.seo-text li a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.seo-text li a:active,
+.seo-text li a.active {
+    border-bottom: 1px solid #484285;
+}
+
+.seo-text li a:hover {
+    border-bottom: 1px solid #484285;
+}
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

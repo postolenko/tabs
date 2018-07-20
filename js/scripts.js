@@ -10,12 +10,6 @@ var indexAttr;
 var activeTab;
 var dropdownMenu;
 
-$(window).load(function() {
-
-
-
-});
-
 $(window).resize(function() {
 
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
