@@ -20,6 +20,12 @@ $(window).resize(function() {
 
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+    if( bodyWidth > 768 ) {
+
+        $(".dropdown-list").attr("style", "");
+
+    }
+
 });
 
 $(document).ready(function() {
