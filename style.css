@@ -313,7 +313,7 @@ textarea:focus {
     text-align: left;
 }
 
-.dropdown-toggle {
+.dropdown-link {
     display: inline-block;
     vertical-align: top;
     background: #5f58ac;
@@ -322,9 +322,12 @@ textarea:focus {
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 
-.dropdown-menu {
+.dropdown-list {
     display: none;
     width: 100%;
     background: #5f58ac;
@@ -334,15 +337,15 @@ textarea:focus {
     left: 0;
 }
 
-.dropdown-menu li {
+.dropdown-list li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.dropdown-menu li:last-child {
+.dropdown-list li:last-child {
     border-bottom: none;
 }
 
-.dropdown-menu li a {
+.dropdown-list li a {
     display: block;
     padding: 10px 10px;
     background: transparent;
@@ -371,33 +374,33 @@ textarea:focus {
     transition-timing-function: ease;
 }
 
-.dropdown-menu li a:link,
-.dropdown-menu li a:hover {
+.dropdown-list li a:link,
+.dropdown-list li a:hover {
     background: transparent;
 }
 
-.dropdown-menu li a:active,
-.dropdown-menu li a.active {
+.dropdown-list li a:active,
+.dropdown-list li a.active {
     background: #484285;
 }
 
-.dropdown-menu li a:hover {
+.dropdown-list li a:hover {
     background: #484285;
 }
 
-.dropdown-toggle i {
+.dropdown-link i {
     margin: 0 0 0 10px;
     font-size: 10px;
     line-height: 10px;
     color: #ffffff;
 }
 
-.dropdown-toggle:hover + .dropdown-menu {
-    display: block !important;
+.dropdown-link:hover + .dropdown-list {
+    display: block;
 }
 
-.dropdown-menu:hover {
-    display: block !important;
+.dropdown-list:hover {
+    display: block;
 }
 
 .tabs {    

@@ -18,38 +18,41 @@ $(window).load(function() {
 
 $(window).resize(function() {
 
-    
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 });
 
 $(document).ready(function() {
 
     $(".tabs_wrapp").each(function() {
-        activeMenuLink = $(this).find(".dropdown-menu a").filter(".active");
+        activeMenuLink = $(this).find(".dropdown-list a").filter(".active");
         indexAttr = activeMenuLink.attr("data-index-menu");
         activeTab = $(this).find(".tab").filter("[data-index-tab = '"+ indexAttr +"']");
         activeTab.addClass("active");
     });
 
-    // $(".dropdown-menu").addClass("slidemenu");
-
     $(".dropdown_wrapp").each(function() {
 
-        if( $(this).find(".dropdown-menu").length > 0 ) {
+        if( $(this).find(".dropdown-list").length > 0 ) {
 
-            $(this).find(".dropdown-toggle").append('<i class="fas fa-chevron-down"></i>');
+            $(this).find(".dropdown-link").append('<i class="fas fa-chevron-down"></i>');
 
         }
 
     });
-   
 
-    $(".dropdown-menu a").click( function(e) {
+    $(".dropdown-link").click(function(e) {
+
+        e.preventDefault();
+
+    });
+
+    $(".dropdown-list a").click( function(e) {
 
         e.preventDefault();
 
         parentBlock = $(this).closest(".tabs_wrapp");
-        parentBlock.find(".dropdown-menu a").removeClass( "active" );
+        parentBlock.find(".dropdown-list a").removeClass( "active" );
         indexAttr = $(this).attr("data-index-menu");
         parentBlock.find(".tab").removeClass( "active" );
         activeTab = parentBlock.find(".tab").filter("[data-index-tab = '"+ indexAttr +"']");
@@ -57,23 +60,28 @@ $(document).ready(function() {
         activeTab.addClass("active");
 
     });
+    
 
-    // $( ".dropdown-toggle" ).bind({
-    //   mouseenter: function() {
-    //     // $( this ).css({
-    //     //     "display" : "block"
-    //     // });
-    //     dropdownMenu = $( this ).closest(".dropdown_wrapp").find(".dropdown-menu");
-    //     dropdownMenu.slideDown(300);
+    $(".dropdown-link").click(function(e) {
 
-    //   },
-    //   mouseleave: function() {
-    //     // $( this ).css({
-    //     //     "display" : "none"
-    //     // });
-    //     dropdownMenu.slideUp(300);
-    //   }
-    // });
+        e.preventDefault();
 
+        if( bodyWidth <= 768 ) {
+
+            dropdownMenu = $(this).closest(".dropdown_wrapp").find(".dropdown-list");
+
+            if(dropdownMenu.is(":hidden")) {
+
+                dropdownMenu.slideDown(300);
+
+            } else {
+
+                dropdownMenu.slideUp(300);
+
+            }
+
+        }
+
+    });
 
 });
