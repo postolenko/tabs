@@ -120,6 +120,10 @@ a:active {
     float: left;
 }
 
+.right {
+    float: left;
+}
+
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
@@ -325,4 +329,99 @@ a:active {
 
 .seo-text li a:hover {
     border-bottom: 1px solid #484285;
+}
+
+.two-cols_templ > .left {
+    width: 40%;
+    padding: 0 2% 0 0;
+    border-right: 2px solid #484285;
+}
+
+.two-cols_templ > .right {
+    width: 60%;
+    padding: 0 0 0 2%;
+}
+
+.good-card {
+    display: table;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.good-card .col-1 {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+    padding: 0 1% 0 0;
+}
+
+.good-card .col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 10px 0 10px 1%;
+}
+
+.good-card .img-box {
+    max-width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.good-card .img-box img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.good-card a {
+    display: inline;
+    border-bottom: 1px solid #484285;
+    font-family: "OpenSans", "Arial", "Verdana", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    color: #484285;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.good-card a:link,
+.good-card a:hover {
+    border-bottom: 1px solid #484285;
+}
+
+.good-card a:active,
+.good-card a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.good-card a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.links_wrapp_2 .left {
+    width: 50%;
 }

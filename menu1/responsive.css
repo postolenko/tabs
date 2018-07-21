@@ -32,6 +32,17 @@
 	    width: 50%;
 	}
 
+	.two-cols_templ > .left {
+	    width: 100%;
+	    padding: 0;
+	    border-right: none;
+	}
+
+	.two-cols_templ > .right {
+	    width: 100%;
+	    padding: 0;
+	}
+
 }
 
 @media only screen and (max-width: 480px) {
