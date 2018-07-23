@@ -47,6 +47,13 @@ $(document).ready(function() {
 
     });
 
+    $(".dropdown-list").mouseleave(function(e) {
+
+        parentBlock = $(this).closest(".tabs_wrapp");
+        parentBlock.find(".tab").removeClass( "active" );
+
+    });
+
     $(".dropdown-list a").click( function(e) {
 
         e.preventDefault();
