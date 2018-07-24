@@ -1,9 +1,3 @@
-@media only screen and (max-width: 1240px) {
-	.row {
-		padding: 0 2%;
-	}
-}
-
 @media only screen and (max-width: 900px) {
 
 	.two-cols_templ > .left {
