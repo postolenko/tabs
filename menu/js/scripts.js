@@ -67,7 +67,7 @@ $(document).ready(function() {
     });
 
     $( ".dropdown-list > li" ).mouseenter( function() {
-        innerMenuWidth = $(this).closest(".menu_wrapp").width() - $(this).closest(".dropdown-list").width();
+        innerMenuWidth = $(this).closest(".menu_wrapp").outerWidth(true) - $(this).closest(".dropdown-list").outerWidth(true);
         innerMenu = $( this ).find(".inner-menu");
         innerMenu.css({
             "width" : innerMenuWidth + "px"

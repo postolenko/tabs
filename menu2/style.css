@@ -84,10 +84,6 @@ button {
 /* ----- DEFAULT STYLES ------ */
 /*-------------------------------------------*/
 
-section {
-    position: relative;
-}
-
 li {
     list-style: none;
 }
@@ -125,21 +121,16 @@ a:active {
 }
 
 .right {
-    float: right;
+    float: left;
 }
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
 /*-------------------------------------------*/
 
-.tabs_wrapp {
-    margin: 20px 0;
-}
-
-.tabs-menu_wrapp {
+.menu_wrapp {
     text-align: right;
-    position: relative;
-    z-index: 2;
+    margin-top: 30px;
 }
 
 .dropdown_wrapp {
@@ -154,44 +145,67 @@ a:active {
     display: inline-block;
     vertical-align: top;
     background: #5f58ac;
-    padding: 8px 10px;
+    /*padding: 8px 10px;*/
+    padding: 8px 33px 8px 10px;
     font-family: "OpenSans", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
+    position: relative;
     -webkit-border-radius: 3px 3px 0 0;
     -moz-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
 }
 
+.dropdown-link i {
+    /*display: block;*/
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+    width: 37px;
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+}
+
+.dropdown-link i:before {
+    position: relative;
+    top: 12px;
+}
+
 .dropdown-list {
     display: none;
     width: 100%;
-    padding: 10px 13px 0 13px;
+    padding: 0 10px;
     background: #5f58ac;
     border-bottom: 2px solid #4f4992;
-    margin-left: -10px;
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 2;
 }
 
-.dropdown-list li {
+.dropdown-list > li {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.dropdown-list li:last-child {
+.dropdown-list > li:last-child {
     border-bottom: none;
 }
 
-.dropdown-list li a {
+.dropdown-list > li > a {
     display: inline;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid transparent;
     font-family: "OpenSans", "Arial", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
+    position: relative;
+    z-index: 2;
     -webkit-transition-property: all;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -213,74 +227,70 @@ a:active {
     transition-timing-function: ease;
 }
 
-.dropdown-list li a:link,
-.dropdown-list li a:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
+.dropdown-list > li:link > a,
+.dropdown-list > li:visited > a {
+    border-bottom: 1px solid transparent;
 }
 
-.dropdown-list li a:active,
-.dropdown-list li a.active {
-    border-bottom: 1px solid rgba(255, 255, 255, .9);
+.dropdown-list > li:active > a,
+.dropdown-list > li.active > a {
+    border-bottom: 1px solid #ffffff;
 }
 
-.dropdown-list li a:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, .9);
+.dropdown-list > li:hover > a {
+    border-bottom: 1px solid #ffffff;
 }
 
-.dropdown-link i {
-    margin: 0 0 0 10px;
+.dropdown-list > li > a i {
+    /*display: block;*/
+    display: none;
+    width: 37px;
+    height: 100%;
+    text-align: center;
     font-size: 10px;
     line-height: 10px;
     color: #ffffff;
 }
 
-.dropdown-link:hover + .dropdown-list {
-    display: block;
-}
-
-.dropdown-list:hover {
-    display: block;
-}
-
-.tabs {    
+.dropdown-list > li > a i:before {
     position: relative;
+    top: 14px;
 }
 
-.tabs .tab {
+.inner-menu {
     border: 2px solid #484285;
     padding: 20px;
     width: 100%;
+    margin-right: -2px;
     position: absolute;
     top: 0;
-    left: -200%;
+    right: 100%;
     z-index: -1;
     opacity: 0;
     -webkit-transition-property: opacity;
-    -webkit-transition-duration: .7s;
+    -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
     -moz-transition-property: opacity;
-    -moz-transition-duration: .7s;
+    -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
     -ms-transition-property: opacity;
-    -ms-transition-duration: .7s;
+    -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
     -o-transition-property: opacity;
-    -o-transition-duration: .7s;
+    -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
     transition-property: opacity;
-    transition-duration: .7s;
+    transition-duration: .3s;
     transition-timing-function: ease;
 }
 
-.tabs .tab.active {
-    position: relative;
-    left: 0;
+.dropdown-list > li:hover > .inner-menu {
+    z-index: 2;
     opacity: 1;
-    z-index: 1;
 }
 
 .links_wrapp .left {
